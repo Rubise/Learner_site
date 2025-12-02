@@ -4,16 +4,16 @@ import { Link} from 'react-router-dom'
 function Header() {
   return (
     <>
-        <div className='bg-[#f2f2f2]'>
-           <div className='grid grid-cols-2'>
-                <div className=''>
-                    <h1>Learn What Matters Most</h1>
+        <div className='bg-[#f2f2f2] md:pt-10 md:px-10 pt-5' >
+           <div className='md:grid md:grid-cols-2 md:grid-rows-2 pl-10 flex flex-col ' >
+                <div className='col-start-1 col-end-2'>
+                    <h1 className='md:text-5xl font-semibold text-[00050A] md:mb-0 text-4xl mb-7' style={{fontFamily: "sora"}}>Learn what <br />matters most</h1>
                 </div>
-                <div className='flex flex-col'>
-                    <p>Master new skills at your own pace with courses designed for real growth.start learning today and unlock your potential</p>
-                    <div className='flex'>
-                        <Link to="/explore">Explore</Link>
-                        <Link to="/learn">Learn</Link>
+                <div className='row-start-2 col-end-3'>
+                    <p style={{fontFamily:"inter"}} className='text-[00050A] md:text-xl md:pr-0 text-[18.3px] pr-[3px]'>Master new skills at your own pace with courses designed for real growth. Start learning today and unlock your potential.</p>
+                    <div className='flex my-8 gap-6'>
+                        <Link to="/explore" className='bg-[#CCE0F4] text-white rounded-lg px-6 py-1.5 border-2 border-solid border-black hover:bg-gray-800 transition duration-150'>Explore</Link>
+                        <Link to="/learn" className='rounded-lg px-6 py-1.5 border-black border-solid border-2 flex items-center space-x-2 hover:bg-gray-100 transition duration-150'>Learn</Link>
                     </div>
                 </div>
             </div> 
