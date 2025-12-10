@@ -12,8 +12,8 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="p-2 sticky top-0 z-50 bg-[#f2f2f2]">
-      <div className='container mx-auto p-3 flex justify-between items-center relative'>
+    <nav className="p-2 sticky top-0 z-50 bg-[#f2f2f2]" >
+      <div className='container mx-auto p-3 flex justify-between items-center relative' style={{width:"90%", margin: "0, auto"}}>
         <div className="flex items-center space-x-2">
           <img src={Images.logo} alt="" className='w-10 h-10'/>
         </div>
