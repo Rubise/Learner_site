@@ -1,19 +1,16 @@
 import React from 'react'
-import Header from '../components/Header'
-import Courses from '../components/Courses'
 import Cta from '../components/Cta'
+import Products from '../components/Products'
 import Footer from '../components/Footer'
-import Contact from '../components/Contact'
 
 function Home() {
   return (
-    <>
-      <Header />
-      <Courses />
+    <div>
       <Cta />
-      <Contact />
+      <Products />
+      fyy
       <Footer />
-    </>
+    </div>
   )
 }
 

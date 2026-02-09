@@ -6,3 +6,10 @@
 .carouselwrapper::-webkit-scrollbar{
     display: none;
 }
+/* *{
+    padding: 0;
+    box-sizing:border-box;
+} */
+body{
+    background-color: hsl(40, 33%, 99%);
+}

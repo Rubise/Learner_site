@@ -1,45 +1,36 @@
 import React from 'react'
+import images from '../assets/assets'
 import { Link } from 'react-router-dom'
-import { Images } from '../assets/assets'
-import { Facebook, Instagram, Youtube, Twitter, Linkedin } from 'lucide-react';
-
+import { Mail, Phone, MapPin } from 'lucide-react'
 function Footer() {
   return (
-    <>
-      <footer className='mt-[30px] pb-[85px]'>
-        <div className="container mx-auto w-[90%]">
-          <div className="flex md:gap-2.5 items-center justify-between mb-[65px] md:flex-row flex-col gap-[60px]">
-            <div>
-              <img src={Images.logo} alt="" className="w-10 h-10" />
+    <footer className='flex md:w-[95%] w-[88%] my-0 mx-auto mb-20 flex-col'>
+        <div className='flex md:items-center md:w-[80%] mb-10 md:flex-row flex-col gap-6' style={{justifyContent: "space-between"}}>
+            <div className='flex flex-col gap-2'>
+                <div className='flex gap-2'>
+                    <img src={images.book} alt="logo" style={{width:"35px"}} className='rounded-full p-2 bg-[#12876f]'/>
+                    <span className='text-[hsl(210,40%,14%)] font-bold text-[1.25rem]'>LearnHub</span>
+                </div>
+                <p className='md:text-black text-[hsl(210,20%,45%)] md:text-[1rem] text-sm'>Empowering learners with practial skills for the digital world.</p>
             </div>
-            <div id="" className='flex md:gap-[13px]  md:flex-row flex-col gap-[20px] items-center font-semibold' style={{fontFamily:"Inter"}}>
-              <Link>All courses</Link>
-              <Link>How it works</Link>
-              <Link>Contact us</Link>
-              <Link>Get started</Link>
-              <Link>Support</Link>
+            <div className='flex flex-col gap-3 text-[0.9rem] pr-32.5'>
+                <h3 className='font-bold'>Quick Links</h3>
+                <Link to="/courses" className='text-[hsl(210,20%,45%)] '>Courses</Link>
+                <Link to="/payment" className='text-[hsl(210,20%,45%)]'>How to pay</Link>
             </div>
-            <div className="flex gap-4 items-center">
-              <Facebook />
-              <Instagram />
-              <Twitter />
-              <Linkedin />
-              <Youtube />
+            <div className='flex flex-col justify-center gap-3 text-[0.9rem] md:ml-18.75 md:pl-5'>
+                <h3 className='font-bold'>Contact Us</h3>
+                <div className='flex gap-2 items-center'><Mail className='text-[hsl(168,76%,30%)]' size={15}/> <span className='text-[hsl(210,20%,45%)]'>hello@learnhub.com</span></div>
+                <div className='flex gap-2 items-center'><Phone className='text-[hsl(168,76%,30%)]' size={15}/> <span className='text-[hsl(210,20%,45%)]'>+234 801 234 5678</span></div>
+                <div className='flex gap-2 items-center'><MapPin className='text-[hsl(168,76%,30%)]' size={15}/> <span className='text-[hsl(210,20%,45%)]'>Lagos, Nigeria</span></div>
             </div>
-          </div>
-          <hr className='w-[95%] mx-auto font-black mt-3 bg-[00050A]'/>
-          <div className='md:flex justify-center items-center gap-6  pt-9 grid grid-col-2'>
-            <p className='row-start-2 row-end-3 text-[13.4px] font-semibold' >&copy; 2025 LearningCanvas Platform. All rights reserved.</p>
-            <ul className='flex items-center gap-6 md:flex-row flex-col font-semibold'>
-                <li className='pb-1'><a href="#" className='underline'>Privacy Policy</a></li>
-                <li className='underline'><a href="#">Terms of Service</a></li>
-                <li className='underline'><a href="#">Cookies Setting</a></li>
-            </ul>
-          </div>
         </div>
-      </footer>
-    </>
-  );
+        <hr className='text-[hsl(210,20%,90%)] font-light'/>
+        <div className='text-center text-[hsl(210,20%,45%)] font-light text-sm mt-9'>
+            &copy; 2026 LearnHub. All rights reserved
+        </div>
+    </footer>
+  )
 }
 
 export default Footer
