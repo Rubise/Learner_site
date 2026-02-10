@@ -1,5 +1,5 @@
 import React from 'react'
-import images from '../assets/assets'
+import {images} from '../assets/assets'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Check } from 'lucide-react'

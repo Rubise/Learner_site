@@ -5,6 +5,7 @@ import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Courses from './pages/Courses'
 import Payment from './pages/Payment'
+import CourseDetail from './components/CourseDetail'
 function App() {
   
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element = {<Home />} />
         <Route path='/courses' element ={<Courses/>}/>
         <Route path='/payment' element={<Payment/>}/>
+        <Route path='/courses/:name' element={<CourseDetail />} />
       </Routes>
     </>
   )

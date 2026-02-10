@@ -1,10 +1,10 @@
 import React from 'react'
-import images from '../assets/assets'
+import {images} from '../assets/assets'
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin } from 'lucide-react'
 function Footer() {
   return (
-    <footer className='flex md:w-[95%] w-[88%] my-0 mx-auto mb-20 flex-col'>
+    <footer className='flex md:w-[95%] w-[88%] my-0 mx-auto mb-20 flex-col mt-8'>
         <div className='flex md:items-center md:w-[80%] mb-10 md:flex-row flex-col gap-6' style={{justifyContent: "space-between"}}>
             <div className='flex flex-col gap-2'>
                 <div className='flex gap-2'>
