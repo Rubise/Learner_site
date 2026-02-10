@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin } from 'lucide-react'
 function Footer() {
   return (
-    <footer className='flex md:w-[95%] w-[88%] my-0 mx-auto mb-20 flex-col mt-8'>
-        <div className='flex md:items-center md:w-[80%] mb-10 md:flex-row flex-col gap-6' style={{justifyContent: "space-between"}}>
+    <footer className='flex  pb-20 flex-col border-t pt-8 border-[hsl(210,20%,90%)] bg-[hsl(210,33%,98%)]'>
+        <div className='md:w-[80%]'>
+        <div className='flex md:items-center  mb-10 md:flex-row flex-col gap-6 md:w-[95%] w-[88%] my-0 mx-auto' style={{justifyContent: "space-between"}}>
             <div className='flex flex-col gap-2'>
                 <div className='flex gap-2'>
                     <img src={images.book} alt="logo" style={{width:"35px"}} className='rounded-full p-2 bg-[#12876f]'/>
@@ -28,6 +29,7 @@ function Footer() {
         <hr className='text-[hsl(210,20%,90%)] font-light'/>
         <div className='text-center text-[hsl(210,20%,45%)] font-light text-sm mt-9'>
             &copy; 2026 LearnHub. All rights reserved
+        </div>
         </div>
     </footer>
   )

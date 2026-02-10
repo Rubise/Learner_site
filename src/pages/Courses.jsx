@@ -1,8 +1,13 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import Course from '../components/CourseList'
 
 function Courses() {
   return (
-    <div>Courses</div>
+    <div>
+        <Course />
+        <Footer />
+    </div>
   )
 }
 

@@ -18,7 +18,7 @@ function Cta() {
             <p className='flex flex-col items-center mt-6 text-lg md:text-xl text-[hsl(210,20%,45%)] text-center w-[97%] mx-auto my-0'>Practical, affordable courses designed to help you succeed in the digital world. Learn at your own pace with expert-led content.</p>
         </div>
         <div>
-            <Link to="/course" className='bg-[hsl(15,90%,60%)] px-10  py-4 rounded-xl text-xl flex items-center gap-2 mt-10 font-bold hover:scale-105 transition-all duration-300 hover:shadow-xl hover:translate-y-1 active-scale-95'>
+            <Link to="/courses" className='bg-[hsl(15,90%,60%)] px-10  py-4 rounded-xl text-xl flex items-center gap-2 mt-10 font-bold hover:scale-105 transition-all duration-300 hover:shadow-xl hover:translate-y-1 active-scale-95'>
                 <span className='text-white'>View Courses</span>
                 <ArrowRight size={18} className='text-white'/>
             </Link>

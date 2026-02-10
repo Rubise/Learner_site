@@ -1,33 +1,21 @@
-import React, { useState } from 'react'
-import { ArrowRight, Clock } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import {images} from '../assets/assets'
-import { ChartNoAxesColumnIncreasing } from 'lucide-react'
-import {briefProduct} from '../assets/assets'
-
-
-function Products() {
-
+import React from 'react'
+import { allCourse } from '../assets/assets'
+import { Link } from 'react-router-dom';
+function CourseList() {
   return (
-    <div className='mt-20 mb-22'>
-        <div className='flex justify-between items-center md:w-[95%]  mx-auto my-0 md:flex-row flex-col w-[88%] gap-3'>
-            <div className='flex flex-col gap-3'> 
-              <h3 className='md:text-4xl font-bold text-3xl'>Featured Courses</h3>
-              <p className='text-lg text-[hsl(210,20%,45%)]'>Popular coureses to kickstart your learning journey</p>
-            </div>
-            <div className='mt-3 group border-2 border-solid border-[hsl(168,76%,30%)] rounded-xl px-6 py-3 flex items-center hover:bg-[hsl(168,76%,30%)] cursor-pointer' >
-              <Link to="/courses" className='text-[hsl(168,76%,30%)] font-bold group-hover:text-white'>View All Courses</Link>
-              <ArrowRight className='text-[hsl(168,76%,30%)] group-hover:text-white'/>
-            </div>
+    <div className='md:w-[95%] w-[88%] mx-auto my-0 mt-15 mb-5 pb-15 '>
+        <div className='flex items-center justify-center flex-col gap-2'>
+            <h1 className='text-5xl font-bold mb-2'>All Courses</h1>
+            <p className='mb-5 pb-5 text-[1.2rem] text-[hsl(210,20%,45%)]'>Choose from our collection of practical, skill-building courses</p>
         </div>
-        <div className='flex items-center justify-between gap-8 md:w-[95%] w-[88%] mx-auto my-0 mt-12 md:flex-row flex-col' >
+        <div className='md:grid grid-cols-3 gap-8 flex flex-col' >
           
             {
-              briefProduct.map((product) => {
+              allCourse.map((product) => {
                   const Icon3 = product.image3; 
                   const Icon2 = product.image2;
                 return(
-                  <Link to={`/courses/${product.name}`} key={product.id} className='group border border-solid  border-[hsl(168,30%,95%)]  flex-1 rounded-2xl shadow-[0_4px_20px_-4px_rgba(41,46,51,0.08)] overflow-hidden pb-6 transition-all duration-300 hover:shadow-xl hover:translate-y-2 active-scale-105' >
+                  <Link to={`/courses/${product.name}`} key={product.id} className='group border border-solid  border-[hsl(168,30%,95%)]  rounded-2xl shadow-[0_4px_20px_-4px_rgba(41,46,51,0.08)] overflow-hidden pb-6 transition-all duration-300 hover:shadow-xl hover:translate-y-2 active-scale-105' >
                      <div className=' flex justify-center items-center md:h-60 h-50' style={{background: "linear-gradient(to bottom right, hsl(168 76% 36%/.2), hsl(168 76% 36%/.05))"}}>
                         <img src={product.image1} alt="" className='w-10 '/>
                      </div>
@@ -54,9 +42,8 @@ function Products() {
               })
             }
         </div>
-        
     </div>
   )
 }
 
-export default Products
+export default CourseList
