@@ -12,7 +12,6 @@ function Payment() {
       </div>
       <Pay />
       <AccountCard />
-      <Footer />
     </div>
   )
 }

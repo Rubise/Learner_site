@@ -10,7 +10,6 @@ function Home() {
       <Cta />
       <Products />
       <Info />
-      <Footer />
     </div>
   )
 }
